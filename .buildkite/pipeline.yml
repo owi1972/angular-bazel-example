@@ -18,6 +18,6 @@ steps:
     plugins:
       - docker#v2.0.0:
           image: "microsoft/dotnet:latest"
-          workdir: /src
+          workdir: C:\src
     agents:
       windows: true
