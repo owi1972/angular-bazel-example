@@ -1,5 +1,16 @@
 steps:
-  - label: info
+  - label: linux-steps
+    command: 
+      - node --version
+      - yarn --version
+      - bazel info
+    plugins:
+      - docker#v2.0.0:
+          image: "angular/ngcontainer:0.7.0"
+          workdir: /src
+    agents:
+      linux: true          
+  - label: windows-steps
     command: 
       - node --version
       - yarn --version
@@ -8,3 +19,5 @@ steps:
       - docker#v2.0.0:
           image: "microsoft/dotnet:latest"
           workdir: /src
+    agents:
+      windows: true
