@@ -6,5 +6,5 @@ steps:
       - bazel info
     plugins:
       - docker#v2.0.0:
-          image: "angular/ngcontainer:0.7.0"
+          image: "microsoft/dotnet:latest"
           workdir: /src
