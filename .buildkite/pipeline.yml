@@ -12,9 +12,7 @@ steps:
   #     linux: true          
   - label: windows-steps
     command: 
-      - "node --version"
-      - "yarn --version"
-      - "bazel info"
+      - "echo hello"
     plugins:
       - docker#v2.0.0:
           image: "microsoft/dotnet:latest"
