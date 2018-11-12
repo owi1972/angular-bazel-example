@@ -11,8 +11,7 @@ steps:
   #   agents:
   #     linux: true          
   - label: windows-steps
-    command: 
-      - "echo hello"
+    command: "echo hello"
     plugins:
       - docker#v2.0.0:
           image: "microsoft/dotnet:latest"
