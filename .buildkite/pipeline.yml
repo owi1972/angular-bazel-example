@@ -11,9 +11,7 @@ steps:
   #   agents:
   #     linux: true          
   - label: windows-steps
-    command: 
-      - "dir"
-      - "not-a-binary"
+    command: "dir && not-a-binary"
     plugins:
       - docker#v2.0.0:
           image: "microsoft/dotnet:latest"
