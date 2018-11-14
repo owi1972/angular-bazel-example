@@ -13,7 +13,7 @@ steps:
   - label: windows-steps
     command: "dir && not-a-binary"
     plugins:
-      - docker#v2.0.0:
-          image: "microsoft/dotnet:latest"
+      - https://github.com/filipesilva/docker-buildkite-plugin.git#1bd961d8601a26af69194ef21fd639df3840da5c:
+          image: "stefanscherer/node-windows:10.13.0"
     agents:
       windows: true
