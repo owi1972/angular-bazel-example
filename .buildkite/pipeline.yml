@@ -11,7 +11,7 @@ steps:
   #   agents:
   #     linux: true          
   - label: windows-steps
-    command: "dir && not-a-binary"
+    command: "npm -v && yarn -v"
     plugins:
       - https://github.com/filipesilva/docker-buildkite-plugin.git#1bd961d8601a26af69194ef21fd639df3840da5c:
           image: "stefanscherer/node-windows:10.13.0"
